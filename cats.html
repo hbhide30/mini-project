@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+        margin: 0px;
+        padding: 0px;
+        background-color: bisque;
+
+
+    }
+    
+
+    .container1{
+    display:block;
+    position:absolute;
+    left:20%;
+    top:10%;
+
+  
+  }
+  .container2{
+    display:block;
+    position:absolute;
+    left:45%;
+    top:10%;
+
+  
+  }
+  .container3{
+    display:block;
+    position:absolute;
+    left:70%;
+    top:10%;
+  }
+  .container4{
+    display:block;
+    position:absolute;
+    left:20%;
+    top:70%;
+  }
+  .container5{
+    display:block;
+    position:absolute;
+    left:45%;
+    top:70%;
+  }
+  .container6{
+    display:block;
+    position:absolute;
+    left:70%;
+    top:70%;
+  }
+    .card {
+  box-sizing: border-box;
+  width: 292px;
+  height: 354px;
+  background:#bd084d;
+  border: 1px solid #bd084d;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align:center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: list-item;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color:bisque;
+  
+  
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.card img {
+    margin-top: -1px;
+    width: 291px;
+    height: 60%;
+    padding: 0;
+    border-radius: 17px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.card text{
+  text-align: center;
+  color: brown;
+  background-color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display:table-caption;
+}
+
+.categories{
+    width: 16%;
+    color: bisque;
+    padding-block: 100px;
+    text-align: center;
+    height: 1000px;
+    background-color: #bd084d;
+    font-size: x-large;
+    
+    
+
+}
+.select-breed{
+  width: 70%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+  
+.select-age{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+
+}
+.select-gender{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+}
+.select-color{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+}
+a{
+  text-decoration: none;
+  color:bisque;
+}
+</style>
+
+<body>
+    <section>
+      <div class="categories">
+        <label for="BREED">BREED</label>
+        <a href="#">
+          <button class="select-breed"onclick="filterObject('all')">ALL</button>
+          </a>
+        <a href="#">
+          <button class="select-breed"onclick="filterObject('himcat')">HIMALAYAN CAT</button>
+          </a>
+          <a href="#">
+            <button class="select-breed"onclick="filterObject('bcat')">BOMBAY  CAT</button>
+            </a>
+    </section>
+    <div class="Object">
+    <div class="container1 himcat">
+          <div class="card">
+            <a href="/jack.html"><img src="https://cdn.pixabay.com/photo/2016/03/24/21/21/cat-1277665_1280.jpg">
+            <div class="text">
+              <h2>JACK</h2>
+              <h4><p>BREED:HIMALAYAN CAT<br>
+              AGE:3 YRS<br>
+              GENDER:MALE</p></h4>
+              </a>
+            </div>
+            
+            </div>
+         </div>
+    <div class="container2 all">
+            <div class="card">
+              <a href="/simba.html">
+            <img src="https://cdn.pixabay.com/photo/2017/09/24/23/38/cat-2783601_1280.jpg">
+            <div class="text">
+              <h2>SIMBA</h2>
+              <h4><p>BREED:NOT SPECIFIED<br> 
+              AGE:1 YRS<br>
+              GENDER:MALE</p></h4>
+              </a>
+         </div>
+            </div>
+         </div>
+    <div class="container3 all">
+            <div class="card">
+              <a href="/gloria.html">
+            <img src="https://cdn.pixabay.com/photo/2017/01/20/21/22/kitten-asleep-in-a-pot-1995961_1280.jpg">
+                <div class="text">
+                     <h2>GLORIA</h2>
+                     <h4><p>BREED:NOT SPECIFIED<br>
+                     AGE:6 MONTHS<br>
+                     GENDER:FEMALE</p></h4>
+                     </a>
+                </div>
+            </div>
+         </div>
+    <div class="container4 all">
+            <div class="card">
+              <a href="/rosy.html">
+            <img src="https://cdn.pixabay.com/photo/2023/07/19/04/56/european-shorthair-8136065_1280.jpg">
+            <div class="text">
+              <h2>ROSY</h2>
+              <h4><p>BREED:NOT SPECIFIED<br>
+              AGE:5 MONTHS<br>
+              GENDER:FEMALE</p></h4>
+              </a>
+         </div>
+            </div>
+         </div> 
+    <div class="container5 bcat">
+            <div class="card">
+              <a href="/charlie.html">
+            <img src="https://cdn.pixabay.com/photo/2022/04/27/02/27/animal-7159520_1280.jpg">
+            <div class="text">
+              <h2>CHARLIE</h2>
+              <h4><p>BREED:BOMBAY CAT<br>
+              AGE:4 YRS<br>
+              GENDER:MALE</p></h4>
+              </a>
+         </div>
+            </div>
+         </div>   
+    <div class="container6 all">
+            <div class="card">
+              <a href="/lily.html">
+            <img src="https://cdn.pixabay.com/photo/2018/10/27/18/24/cat-3777201_1280.jpg">
+            <div class="text">
+              <h2>LILY</h2>
+              <h4><p>BREED:NOT SPECIFIED<br>
+              AGE:4 MONTHS<br>
+              GENDER:FEMALE</p></h4>
+              </a>
+         </div>
+            </div>
+         </div>            
+    </body>
+<script src="javascript.js"> </script>  
+    
+</body>
+</html>

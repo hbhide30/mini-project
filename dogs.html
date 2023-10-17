@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+        margin: 0px;
+        padding: 0px;
+        background-color: bisque;
+
+
+    }
+    
+
+    .container1{
+    display:block;
+    position:absolute;
+    left:20%;
+    top:10%;
+
+  
+  }
+  .container2{
+    display:block;
+    position:absolute;
+    left:45%;
+    top:10%;
+
+  
+  }
+  .container3{
+    display:block;
+    position:absolute;
+    left:70%;
+    top:10%;
+  }
+  .container4{
+    display:block;
+    position:absolute;
+    left:20%;
+    top:70%;
+  }
+  .container5{
+    display:block;
+    position:absolute;
+    left:45%;
+    top:70%;
+  }
+  .container6{
+    display:block;
+    position:absolute;
+    left:70%;
+    top:70%;
+  }
+    .card {
+  box-sizing: border-box;
+  width: 292px;
+  height: 354px;
+  background:#bd084d;
+  border: 1px solid #bd084d;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align:center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: list-item;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color:bisque;
+  
+  
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.card img {
+    margin-top: -1px;
+    width: 291px;
+    height: 60%;
+    padding: 0;
+    border-radius: 17px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.card text{
+  text-align: center;
+  color: brown;
+  background-color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display:table-caption;
+}
+
+.categories{
+    width: 16%;
+    color: bisque;
+    padding-block: 100px;
+    text-align: center;
+    height: 1000px;
+    background-color: #bd084d;
+    font-size: x-large;
+    
+    
+
+}
+.select-breed{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+}
+  
+.select-age{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+
+}
+.select-gender{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+}
+.select-color{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+}
+</style>
+
+<body>
+    <section>
+      <div class="categories">
+        <label for="BREED">breed</label>
+          <select class="select-breed"id="BREED">
+            <option value="SELECT BREED">ALL</option>
+            <option value="SELECT BREED">LABRADOR</option>
+            <option value="SELECT BREED">GERMAN SHEPHERD</option>
+            <option value="SELECT BREED">PUG</option>
+            <option value="SELECT BREED">GOLDEN RETRIEVER</option>
+            <option value="SELECT BREED">DOBERMANN</option>
+            <option value="SELECT BREED">ROTTWEILER</option>
+          
+
+          </select>
+          <label for="AGE">AGE</label>
+          <select class="select-age"id="AGE">
+            <option value="SELECT AGE">ALL</option>
+            <option value="SELECT AGE">0-5 MONTHS</option>
+            <option value="SELECT AGE">5-10 MONTHS</option>
+            <option value="SELECT AGE">10 MONTHS - 1 YRS</option>
+            <option value="SELECT AGE">1-5YRS</option>
+           
+          
+
+          </select>
+        </select>
+        <label for="GENDER">GENDER</label>
+        <select class="select-gender"id="GENDER">
+          <option value="SELECT GENDER">ALL</option>
+          <option value="SELECT GENDER">FEMALE</option>
+          <option value="SELECT GENDER">MALE</option>
+          
+        
+
+        </select>
+        <label for="COLOR">COLOR</label>
+        <select class="select-color"id="COLOR">
+          <option value="SELECT COLOR">ALL</option>
+          <option value="SELECT COLOR">WHITE</option>
+          <option value="SELECT COLOR">BLACK</option>
+          <option value="SELECT COLOR">BROWN</option>
+          <option value="SELECT COLOR">GOLDEN</option>
+          
+          
+          
+        
+
+        </select>
+        
+
+      </div>
+    </section>
+    <div class="container1">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg">
+            <div class="text">
+              <h2>DAISY</h2>
+              <h4><p>BREED:LABRADOR<br>
+              AGE:1 YRS<br>
+              GENDER:FEMALE</p></h4>
+            </div>
+            
+            </div>
+         </div>
+    <div class="container2">
+            <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_1280.jpg">
+            <div class="text">
+              <h2>BRUNO</h2>
+              <h4><p>BREED:ROTTWEILER<br> 
+              AGE:6 MONTHS<br>
+              GENDER:MALE</p></h4>
+         </div>
+            </div>
+         </div>
+    <div class="container3">
+            <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2017/07/11/18/12/funny-expression-2494538_1280.jpg">
+                <div class="text">
+                     <h2>MAGGIE</h2>
+                     <h4><p>BREED:PUG <br>
+                     AGE:3 YRS<br>
+                     GENDER:MALE</p></h4>
+                </div>
+            </div>
+         </div>
+    <div class="container4">
+            <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2019/05/23/19/29/dog-4224638_1280.jpg">
+            <div class="text">
+              <h2>POLO</h2>
+              <h4><p>BREED:GOLDEN RETRIEVER<br>
+              AGE:1 YRS<br>
+              GENDER:MALE</p></h4>
+         </div>
+            </div>
+         </div> 
+    <div class="container5">
+            <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2017/03/14/18/44/dog-2144031_1280.jpg">
+            <div class="text">
+              <h2>RONNY</h2>
+              <h4><p>BREED:GERMAN SHEPHERD<br>
+              AGE:2 YRS<br>
+              GENDER:MALE</p></h4>
+         </div>
+            </div>
+         </div>   
+    <div class="container6">
+            <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2015/08/18/12/52/doberman-893931_1280.jpg">
+            <div class="text">
+              <h2>BOBBY</h2>
+              <h4><p>BREED:DOBERMANN<br>
+              AGE:8 MONTHS<br>
+              GENDER:MALE</p></h4>
+         </div>
+            </div>
+         </div>            
+    
+    
+    
+</body>
+</html>

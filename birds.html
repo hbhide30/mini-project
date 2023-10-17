@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+        margin: 0px;
+        padding: 0px;
+        background-color: bisque;
+
+
+    }
+    
+
+    .container1{
+    display:block;
+    position:absolute;
+    left:20%;
+    top:10%;
+
+  
+  }
+  .container2{
+    display:block;
+    position:absolute;
+    left:45%;
+    top:10%;
+
+  
+  }
+  .container3{
+    display:block;
+    position:absolute;
+    left:70%;
+    top:10%;
+  }
+  .container4{
+    display:block;
+    position:absolute;
+    left:20%;
+    top:70%;
+  }
+  .container5{
+    display:block;
+    position:absolute;
+    left:45%;
+    top:70%;
+  }
+  .container6{
+    display:block;
+    position:absolute;
+    left:70%;
+    top:70%;
+  }
+    .card {
+  box-sizing: border-box;
+  width: 292px;
+  height: 354px;
+  background:#bd084d;
+  border: 1px solid #bd084d;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align:center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: list-item;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color:bisque;
+  
+  
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.card img {
+    margin-top: -1px;
+    width: 291px;
+    height: 60%;
+    padding: 0;
+    border-radius: 17px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.card text{
+  text-align: center;
+  color: brown;
+  background-color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display:table-caption;
+}
+
+.categories{
+    width: 16%;
+    color: bisque;
+    padding-block: 100px;
+    text-align: center;
+    height: 1000px;
+    background-color: #bd084d;
+    font-size: x-large;
+    
+    
+
+}
+.select-breed{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+}
+  
+.select-age{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+
+}
+.select-gender{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+}
+.select-color{
+  width: 90%;
+    color: maroon;
+    background-color: bisque;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 50px;
+
+}
+a{
+  text-decoration: none;
+  color:bisque;
+}
+</style>
+
+<body>
+    <section>
+      <div class="categories">
+        <label for="BREED">BREED</label>
+          <select class="select-breed"id="BREED">
+            <option value="SELECT BREED">ALL</option>
+            <option value="SELECT BREED">PARROT</option>
+            <option value="SELECT BREED">LOVE BIRDS</option>
+            
+
+          </select>
+          <label for="AGE">AGE</label>
+          <select class="select-age"id="AGE">
+            <option value="SELECT AGE">ALL</option>
+            <option value="SELECT AGE">1-2 YRS</option>
+            <option value="SELECT AGE">2-4 YRS</option>
+            <option value="SELECT AGE">4-5YRS</option>
+           
+          
+
+          </select>
+        </select>
+        <label for="GENDER">GENDER</label>
+        <select class="select-gender"id="GENDER">
+          <option value="SELECT GENDER">ALL</option>
+          <option value="SELECT GENDER">FEMALE</option>
+          <option value="SELECT GENDER">MALE</option>
+          
+        
+
+        </select>
+        <label for="COLOR">COLOR</label>
+        <select class="select-color"id="COLOR">
+          <option value="SELECT COLOR">ALL</option>
+          <option value="SELECT COLOR">GREEN</option>
+          <option value="SELECT COLOR">MULTICOLOR</option>
+          
+          
+          
+        
+
+        </select>
+        
+
+      </div>
+    </section>
+    
+    <div class="container1">
+            <div class="card">
+              <a href="/jasper.html">
+            <img src="https://cdn.pixabay.com/photo/2023/02/15/13/19/bird-7791901_1280.jpg">
+                <div class="text">
+                     <h2>JASPER</h2>
+                     <h4><p>BREED:PARROT<br>
+                     AGE:5 YRS<br>
+                     GENDER:FEMALE</p></h4>
+                     </a>
+                </div>
+            </div>
+         </div>
+    
+    <div class="container2">
+            <div class="card">
+              <a href="/jackrose.html">
+            <img src="https://cdn.pixabay.com/photo/2019/10/12/19/14/budgie-4544624_1280.jpg">
+            <div class="text">
+              <h2>JACK AND ROSE</h2>
+              <h4><p>BREED:LOVE BIRDS<br>
+              AGE:4 YRS<br>
+              GENDER:MALE AND FEMALE</p></h4>
+              </a>
+         </div>
+            </div>
+         </div>   
+    <div class="container3">
+            <div class="card">
+              <a href="/romeojuliet.html">
+            <img src="https://cdn.pixabay.com/photo/2020/07/11/06/18/beautiful-parakeet-5392861_1280.jpg">
+            <div class="text">
+              <h2>ROMEO AND JULIET</h2>
+              <h4><p>BREED:LOVE BIRDS<br>
+              AGE:5 YRS<br>
+              GENDER:FEMALE AND MALE</p></h4>
+              </a>
+         </div>
+            </div>
+         </div>            
+    
+    
+    
+</body>
+</html>
